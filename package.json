@@ -1,9 +1,11 @@
 {
+  "homepage": "https://mushuledragon.github.io/portfolio",
   "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://mushuledragon.github.io/portfolio",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -12,5 +14,8 @@
   },
   "dependencies": {
     "astro": "^2.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
